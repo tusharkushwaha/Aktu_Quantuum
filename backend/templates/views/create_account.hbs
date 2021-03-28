@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Create New Account</title>
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style_create_account.css">
+</head>
+
+<body>
+     {{>header}}
+     <section>
+
+          <div class="container">
+               <div class="container_border">
+                    <div>
+                         <h1>
+                              Registration
+                         </h1>
+                    </div>
+                    <form action="/register" method="POST">
+                         <table>
+                              <tr>
+                                   <td>Name</td>
+                                   <td><input type="text" name="name" id="name"></td>
+                              </tr>
+                              <tr>
+                                   <td>Year</td>
+                                   <td><input type="number" name="date" id="date"></td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        Email:
+                                   </td>
+                                   <td>
+                                        <input type="email" name="email" id="email">
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        Password:
+                                   </td>
+                                   <td>
+                                        <input type="password" name="password" id="password">
+                                   </td>
+                              <tr>
+                                   <td colspan="2"><input type="submit" value="Create Account" class="btn_submit"></td>
+                              </tr>
+                             
+                         </table>
+                    </form>
+               </div>
+
+          </div>
+     </section>
+
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Login</title>
+     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+     <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/style_login.css">
+</head>
+
+<body>
+     {{>header}}
+     <section>
+
+          <div class="container">
+               <div class="container_border">
+                    <div>
+                         <h1>
+                              Login
+                         </h1>
+                    </div>
+                    <form action="">
+                         <table>
+                              <tr>
+                                   <td>
+                                        Email:
+                                   </td>
+                                   <td>
+                                        <input type="email" name="email" id="email">
+                                   </td>
+                              </tr>
+                              <tr>
+                                   <td>
+                                        Password:
+                                   </td>
+                                   <td>
+                                        <input type="password" name="password" id="password">
+                                   </td>
+                              <tr>
+                                   <td colspan="2"><input type="submit" value="Submit" class="btn_submit"></td>
+                              </tr>
+                              <tr>
+                                   <td colspan="2"><a href="/create_account">
+                                        <button class="btn_create"> Create New Account</button></a>
+                                   </td>
+                              </tr>
+                         </table>
+                    </form>
+               </div>
+
+          </div>
+     </section>
+
+
+</body>
+
+</html>

@@ -1,0 +1,395 @@
+*{
+     margin: 0px;
+     padding: 0px;
+     /* box-sizing: border-box; */
+}
+li{
+     list-style: none;
+}
+a{
+     text-decoration: none;
+}
+
+/* -------------------------------------navbar */
+.navbar{
+     
+     background-color: rgb(0, 0, 0);
+     z-index:-1;
+    
+    
+}
+.nav_header{
+     /* overflow: auto; */
+     position: fixed;
+     top: 0px;
+     width:100%;
+     
+}
+.img_logo{
+     border: 2px solid yellow;
+     border-radius: 27px;
+}
+.navbar_ul{
+     display: flex;
+     /* justify-content:inherit; */
+     align-items: center;
+     
+     
+     
+}
+.searchcontainer{
+     display: flex;
+     border: 3px solid yellow;
+     border-radius: 9px;
+     margin-left: 20px;
+     padding: 0;
+     height: 32px;
+
+}
+.searchd{
+     border: 2px solid yellow;
+     
+     margin: 0px;
+     padding: 0;
+}
+.searchd > input{
+     height: 31px;
+     border: none;
+     font-size: 17px;
+}
+.searchdimg{
+ background-color: white;
+ 
+ line-height: 43px;;
+}
+
+
+
+.li_itemsb{
+     /* align-self: flex-end; */
+     margin-left: auto;
+}
+
+.div_white{
+     line-height: 8px;
+}
+.btnimg {
+     display: flex;
+     align-items: center;
+     margin: 2px 8px;
+     padding: 3px 12px;
+     border-radius: 9px;
+     border: 2px solid yellow;
+     background-color: white;
+     font-size: 18px;
+     height: 16x;
+ }
+.btnimg:hover{
+     color: red;
+     border: 2px solid rgb(255, 0, 0);
+}
+.btnimg_div{
+     padding: 0px 3px;
+}
+.nav_text{
+     font-family: 'Rock Salt', cursive;
+     margin: 2px 14px;
+     color: yellow;
+     font-weight: bold;
+     font-size: 23px;
+}
+
+/* ----------------main content------------- */
+#body_section{
+     background: rgba(0, 0, 0, 0.7) url("../images/old-books-436498_1280.jpg");
+     background-size: 100vh;
+     background-blend-mode: darken;
+     height: 600px;
+}
+.mainContent{
+     /* background-image:url(../images/old-books-436498_1280.jpg);  */
+     
+     color: white;
+     font-size: 50px;
+     /* margin:40px; */
+     padding: 150px 40px;
+     display: flex;
+     justify-content: center;
+}
+.aktu_text{
+     color: yellow;
+     font-family: 'Rock Salt', cursive;
+     animation: mymove 5s infinite;
+     /* position: relative; */
+     font-weight: bold;
+}
+@keyframes mymove{
+     from{
+          width: 100px;
+     }
+     to{
+          width: 150px;
+     }
+}
+
+
+.main_aktuimg{
+     margin: 0px 26px;
+}
+.logos{
+     display: flex;
+     justify-content: space-evenly;
+}
+
+.logos_div{
+     font-size: 23px;
+     /* display: flex;
+     align-items: center; */
+     color: white;
+}
+.logos_div>div{
+     text-align: center;
+     font-weight: bold;
+}
+
+.logos_div >span{
+     font-size: 50px;
+     color: yellow;
+     /* width:inherit; */
+     display:block;
+     text-align: center;
+     font-weight: bold;
+     
+}
+
+
+/* -------offer page----------- */
+
+#offer{
+     font-size: 30px;
+     text-align: center;
+     margin: 40px 5px;
+     padding: 18px 0px;
+     background-color: rgb(26, 23, 23);
+     color: rgb(255, 255, 255);
+     font-weight: bold;
+
+}
+#offer>span{
+     font-family: 'Rock Salt', cursive ;
+     color: yellow;
+}
+
+.offer{
+     display: flex;
+     justify-content: space-around;
+}
+
+.offer_child{
+     width: 300px;
+     height: 170px;
+     font-size: 20px;
+     text-align: center;
+     font-weight: bold;
+     color: yellow;
+}
+.offer_child>div{
+     background-color: rgb(26, 23, 23);
+     padding: 5px 0px;
+}
+
+
+
+/* ----------mobile app-------- */
+
+.mobile{
+     display: flex;
+     justify-content:space-between;
+     padding: 10px 10px;
+     margin: 30px 11px;
+     border: 7px solid rgb(26, 23, 23);
+}
+.mobile>span{
+     font-size: 25px;
+     color: white;
+     padding: 10px 116px;
+     background-color: rgb(26, 23, 23);
+     /* position: relative; */
+     
+}
+.mobile>span>span{
+     font-family: 'Rock Salt', cursive ;
+     color: yellow;
+     font-weight: bold;
+
+}
+#download{
+     background-color: rgb(238, 255, 0);
+     color: black;
+     text-align: center;
+     margin: 150px 10px;    
+     top:10px;
+     font-size: 20px;
+     padding: 4px;
+     width: 200px;
+     border: 2px solid yellow;
+     
+}
+#download:hover{
+border: 2px solid red;
+}
+
+/* - ---------how can we help-------- - */
+
+.can_help{
+     display: flex;
+     border: 7px solid rgb(26, 23, 23);
+     padding: 10px 10px;
+     margin: 30px 11px;
+
+}
+.can_help>div>ul{
+     padding: 20px 42px;
+     margin: 20px 21px;
+     font-size: 18px;
+}
+.can_help>div>ul>li{
+ padding: 8px;    
+}
+
+#can_help_h4{
+     font-size: 30px;    
+     text-align: center;
+}
+
+/* -------------about_the author-------- */
+
+.author_main{
+     font-size: 30px;
+    text-align: center;
+    margin: 40px 5px;
+    padding: 18px 0px;
+    background-color: rgb(26, 23, 23);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.author_main>span{
+     color: yellow;
+     font-family: 'Rock Salt', cursive;
+}
+
+.author_div_1>img{
+     border: 3px solid yellow;
+     border-radius: 132px;
+}
+.author{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     
+     padding: 10px 10px;
+     margin: 30px 11px;
+}
+
+.author_div_2{
+     font-size: 20px;
+     width: 600px;
+     padding: 10px 10px;
+     font-style: italic;
+
+}
+
+/* ----------testimonial----------- */
+
+.main_testimonail{
+     font-size: 30px;
+    text-align: center;
+    margin: 40px 5px;
+    padding: 18px 0px;
+    background-color: rgb(26, 23, 23);
+    color: yellow;
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+}
+#slide_img{
+     border-radius: 134px;
+     padding: 10px 11px;
+     margin: 10px 60px;
+
+}
+.slideshow-container{
+     display: flex;
+     align-items: center;
+}
+#slideshow_content {
+     padding:10px 107px;
+     margin: 10px 10px;
+     font-size: 20px;
+     font-style: italic;
+
+}
+#turn_btn_left{
+     position: relative;
+     bottom: 170px;
+     z-index: -4;
+}
+#turn_btn_right{
+      position: relative; 
+     bottom: 170px;
+     left:1180px;
+     z-index: -4; 
+}
+
+
+
+
+/* ------------sitemap------------ */
+
+.sitemap{
+     display: flex;
+     justify-content: space-evenly;
+     padding: 70px 10px;
+     /* margin: 10px 10px; */
+     font-size: 20px;
+     background-color: rgb(251, 239, 215);
+}
+.sitemap_div>ul>li{
+     margin: 17px;
+}
+.sitemap_div>ul>li>a:hover{
+     color: red;
+     font-weight: bold;
+}
+
+/* ----------footer---------- */
+
+.footer{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     border-top: 4px solid rgb(173, 160, 160);
+     margin: 0px;
+     padding: 47px 10px;
+     background-color: rgb(251, 239, 215);
+     font-size: 20px;
+     font-weight: bold;
+}
+#social_media{
+     display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
